@@ -9,6 +9,10 @@ class School
   end
 
   def add_student(name, num)
-    @roster << {num => [name]}
+    if @roster[num].nil? == true
+      @roster[num] => [name]}
+    else
+      @roster[num] << name
+    end
   end
 end
