@@ -16,4 +16,13 @@ class School
   def grade(grade)
      @roster[grade]
   end
+
+  def sort()
+    sorted_keys = @roster.keys.sort{ |a,b| a<=>b }
+    sorted_roster = {}
+    sorted_keys.each do |sorted_key|
+      sorted_roster[sorted_key] = @roster[sorted_key]
+    end
+    @roster = sorted_roster
+  end
 end
