@@ -7,4 +7,9 @@ class School
     @title = title
     @roster =[]
   end
+
+  def add_student(title)
+    @title = title
+    @roster =[]
+  end
 end
