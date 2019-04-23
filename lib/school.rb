@@ -5,5 +5,5 @@ class School
 
   def initialize(title)
     @title = title
-  ends
+  end
 end
