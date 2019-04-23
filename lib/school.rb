@@ -10,9 +10,10 @@ class School
 
   def add_student(name, num)
     if @roster[num].nil? == true
-      @roster << { num => [name]}
+      @roster << { num => []}
     else
-      @roster[num] << name
-    end
+
+    @roster[num] << name
+
   end
 end
