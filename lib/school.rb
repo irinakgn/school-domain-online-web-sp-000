@@ -12,6 +12,7 @@ class School
     if @roster[num].nil? == true
       @roster << { num => []}
     end
+
     @roster[num] << name
 
   end
