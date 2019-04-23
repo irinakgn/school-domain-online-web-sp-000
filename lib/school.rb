@@ -12,4 +12,8 @@ class School
       @roster[num] = [] if @roster[num].nil?
       @roster[num] << name
   end
+
+  def grade(grade)
+     @roster[grade]
+  end
 end
