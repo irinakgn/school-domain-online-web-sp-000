@@ -1,5 +1,5 @@
 class School
-  attr_accessor :author, :page_count, :genre
+  attr_accessor :roster, :page_count, :genre
   attr_reader :title
 
 
