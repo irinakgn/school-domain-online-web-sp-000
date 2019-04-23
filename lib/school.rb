@@ -21,7 +21,7 @@ class School
     sorted_keys = @roster.keys.sort{ |a,b| a<=>b }
     sorted_roster = {}
     sorted_keys.each do |sorted_key|
-      sorted_roster[sorted_key] = @roster[sorted_key]
+      sorted_roster[sorted_key] = @roster[sorted_key].sort{ |a,b| a<=>b }
     end
     @roster = sorted_roster
   end
